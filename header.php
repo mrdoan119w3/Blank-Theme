@@ -21,6 +21,7 @@
 	  		<?php if(has_nav_menu('header')):?>
   			<div class="menu_header" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
   				<?php wp_nav_menu(array('theme_location'  => 'header','container'=> ''));?>
+    			<div class="over_wrap"></div>
   			</div>
             <button type="button" class="button_menu">
                 <span class="icon-bar"></span>
