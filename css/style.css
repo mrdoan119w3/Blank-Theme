@@ -32,7 +32,7 @@ html {
 body {
     background: #fff;
     color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     font-size: 13px;
     font-size-adjust: none;
     font-stretch: normal;
@@ -1233,7 +1233,6 @@ p {
     padding: 0;
     list-style: none;
     position: relative;
-    line-height: 84px;
     vertical-align: middle;
 }
 
@@ -1244,7 +1243,7 @@ p {
     text-decoration: none;
     font-weight: 400;
     display: block;
-    line-height: 84px;
+    line-height: 30px;
     vertical-align: middle;
     padding: 0 20px;
     position: relative;
@@ -1280,24 +1279,6 @@ p {
   height: 100%;
   padding-top: 20px;
 }*/
-.menu_header > ul > li ul {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 110%;
-    z-index: 993;
-    width: 230px;
-    background-color: #FFF;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    border-top: 4px solid #2b96cc;
-    padding: 0 15px;
-}
 
 .menu_header > ul > li ul li {
     position: relative;
