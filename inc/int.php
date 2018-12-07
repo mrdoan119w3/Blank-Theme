@@ -36,4 +36,4 @@ function social(){
 <?php 
 	return ob_get_clean();
 }
-add_shortcode(social, social);
+add_shortcode('social', 'social');
