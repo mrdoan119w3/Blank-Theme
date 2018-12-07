@@ -50,3 +50,9 @@ function enqueue_UseAjaxInWp() {
 }
 add_action( 'wp_enqueue_scripts', 'useAjaxInWp', 1 );
 add_action( 'wp_enqueue_scripts', 'enqueue_UseAjaxInWp' );
+
+function admin_enqueue_scripts() {
+    wp_enqueue_style('admin-styles', esc_url( trailingslashit( get_template_directory_uri() ) . 'css/admin-style.css'), array(), CPTDEV_VERSION, 'all');
+    wp_enqueue_script('admin-js', esc_url( trailingslashit( get_template_directory_uri() ) . 'js/admin-js.js'), array('jquery'), CPTDEV_VERSION, true);
+}
+add_action( 'admin_enqueue_scripts', 'admin_enqueue_scripts');
